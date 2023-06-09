@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <Navbar color="primary">
-        Footer content goes here
+        Jessica and Suri
       </Navbar>
     </footer>
   );
