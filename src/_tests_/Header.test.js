@@ -22,4 +22,22 @@ describe("<Header />", () => {
       div
     )
   })
+    it("renders with a header", () => {
+    const div = document.createElement("div")
+    render(
+      <BrowserRouter>
+        <Header />
+      </BrowserRouter>,
+      div
+    )
+    })
+    it("header renders with RubikMoonrocks font", () => {
+      const div = document.createElement("div")
+      render(
+        <BrowserRouter>
+          <Header />
+        </BrowserRouter>,
+        div
+      )
+    })
 })
