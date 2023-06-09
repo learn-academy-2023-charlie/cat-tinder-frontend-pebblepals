@@ -1,8 +1,18 @@
 import React from "react"
 
-const RockIndex = () => {
+const RockIndex = ({rocks}) => {
+    console.log(rocks);
     return (
-        <h2>RockIndex</h2>
+        <main>
+            {rocks.map((rock, index) => {
+                return (
+                    <>
+                        <p>{rock.name}</p>
+                        <p>{rock.age}</p>
+                    </>
+                )
+            })}
+       </main>
     )
 }
 
