@@ -12,4 +12,14 @@ describe("<Header />", () => {
       div
     )
   })
+
+  it("renders a logo with a src and alt", () => {
+    const div = document.createElement("div")
+    render(
+      <BrowserRouter>
+        <Header />
+      </BrowserRouter>,
+      div
+    )
+  })
 })

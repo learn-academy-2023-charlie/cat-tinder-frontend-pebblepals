@@ -12,4 +12,11 @@ describe("<Footer />", () => {
       div
     )
   })
+  it("has a link", () => {
+    render(
+      <BrowserRouter>
+      <Footer />
+      </BrowserRouter>
+    )
+  })
 })
