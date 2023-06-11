@@ -1,9 +1,9 @@
 import React from "react"
 import { Card, CardBody, CardTitle, CardSubtitle, Button } from "reactstrap";
-
+import { NavLink } from "react-router-dom"
 
 const RockIndex = ({rocks}) => {
-    console.log(rocks);
+
         return (
             
             <main className="rock-index-cards">
@@ -21,7 +21,11 @@ const RockIndex = ({rocks}) => {
                                 <CardSubtitle className="mb-2 text-muted" tag="h6">
                                     Age: {rock.age}
                                 </CardSubtitle>
-                                <Button>See More Details</Button>
+                                <Button>
+                                    <NavLink to={`/RockShow/${rock.id}`} className="nav-link">
+                                        Click to See More
+                                    </NavLink>
+                                </Button>
                             </CardBody>
                         </Card>   
                     )
