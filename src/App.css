@@ -9,3 +9,13 @@
   font-family: 'RubikMoonrocks', sans-serif;
   font-size: 30px;
 }
+
+.card {
+  margin: 2rem 0;
+}
+
+.rock-index-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}

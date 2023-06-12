@@ -1,9 +1,47 @@
-import React from "react"
+import React from "react";
+import { useParams } from "react-router-dom"
+import { Card, CardBody, CardTitle, CardSubtitle, CardText} from "reactstrap"
 
-const RockShow = () => {
-    return (
-        <h2>RockShow</h2>
-    )
+const RockShow = ({ rocks }) => {
+    const { id } = useParams()
+    let currentRock = rocks?.find((rock) => {
+        return rock.id === +id
+    })
+        return (
+            <main className="rock-show-cards">
+                {currentRock && (
+                    <>
+                        <Card
+                            style={{
+                                width: '18rem'
+                            }}
+                        >
+                            <CardBody>
+                                <CardTitle tag="h5">
+                                    {currentRock.name}
+                                </CardTitle>
+                                <CardSubtitle
+                                    className="mb-2 text-muted"
+                                    tag="h6"
+                                >
+                                    {currentRock.age}
+                                </CardSubtitle>
+                            </CardBody>
+                            <img
+                                alt={`image of ${currentRock.name}`}
+                                src={currentRock.image}
+                                width="100%"
+                            />
+                            <CardBody>
+                                <CardText>
+                                    {currentRock.enjoys}
+                                </CardText>
+                            </CardBody>
+                        </Card>
+                    </>
+                )}
+            </main>
+        )
 }
 
-export default RockShow
+    export default RockShow
