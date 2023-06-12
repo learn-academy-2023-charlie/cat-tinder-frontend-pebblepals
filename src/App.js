@@ -14,6 +14,10 @@ import { Routes, Route } from "react-router-dom"
 
 const App = () => {
 
+    const createRock = (rock) => {
+        console.log(rock)
+      }
+
     const [rocks, setRocks] = useState(mockRocks)
         return (
 
@@ -23,7 +27,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/rockindex" element={<RockIndex rocks={rocks} />} />
             <Route path="/rockshow/:id" element={<RockShow rocks={rocks}/>} />
-            <Route path="/rocknew" element={<RockNew />} />
+            <Route path="/rocknew" element={<RockNew createRock={createRock}/>} />
             <Route path="/rockedit" element={<RockEdit />} />
             <Route path="*" element={<NotFound />} />
             </Routes>
