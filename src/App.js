@@ -26,8 +26,8 @@ const App = () => {
 
             <Header />
             <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/rockindex" element={<RockIndex rocks={rocks} />} />
+            {/* <Route path="/" element={<Home />} /> */}
+            <Route path="/" element={<RockIndex rocks={rocks} />} />
             <Route path="/rockshow/:id" element={<RockShow rocks={rocks}/>} />
             <Route path="/rocknew" element={<RockNew createRock={createRock}/>} />
             <Route path="/rockedit" element={<RockEdit />} />
