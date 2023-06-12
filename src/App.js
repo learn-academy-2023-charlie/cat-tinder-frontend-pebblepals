@@ -12,6 +12,7 @@ import mockRocks from "./mockRocks"
 import { Routes, Route } from "react-router-dom"
 
 
+
 const App = () => {
 
     const createRock = (rock) => {
@@ -22,6 +23,7 @@ const App = () => {
         return (
 
         <>
+
             <Header />
             <Routes>
             <Route path="/" element={<Home />} />
