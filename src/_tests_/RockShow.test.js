@@ -14,4 +14,22 @@ it("renders a name", () => {
             </Routes>
         </MemoryRouter>
         )
+})
+    it("renders an age", () => { 
+    render(
+        <MemoryRouter initialEntries={["/rockshow/1"]}>
+            <Routes>
+                <Route path="/rockshow/:id" element={<RockShow rocks={mockRocks}/>}/>
+            </Routes>
+        </MemoryRouter>
+        )
+    })
+    it("renders an enjoys", () => { 
+    render(
+        <MemoryRouter initialEntries={["/rockshow/1"]}>
+            <Routes>
+                <Route path="/rockshow/:id" element={<RockShow rocks={mockRocks}/>}/>
+            </Routes>
+        </MemoryRouter>
+        )
     })
