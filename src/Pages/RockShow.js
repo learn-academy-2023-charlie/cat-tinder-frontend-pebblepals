@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom"
-import { Card, CardBody, CardTitle, CardSubtitle, CardText} from "reactstrap"
+import { Card, CardBody, CardTitle, CardSubtitle, CardText, CardLink } from "reactstrap"
 
 const RockShow = ({ rocks }) => {
     const { id } = useParams()
@@ -37,6 +37,9 @@ const RockShow = ({ rocks }) => {
                                     {currentRock.enjoys}
                                 </CardText>
                             </CardBody>
+                            <CardLink href="localhost:300/rockindex">
+                            See All Rocks
+                            </CardLink>
                         </Card>
                     </>
                 )}

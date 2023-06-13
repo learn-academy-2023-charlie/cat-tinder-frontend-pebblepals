@@ -7,7 +7,7 @@
 
 .main-font {
   font-family: 'RubikMoonrocks', sans-serif;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .card {
@@ -18,4 +18,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+.App {background-color: #458dfe;
+opacity: 0.8;
+background-image:  linear-gradient(30deg, #b8b9be 12%, transparent 12.5%, transparent 87%, #b8b9be 87.5%, #b8b9be), linear-gradient(150deg, #b8b9be 12%, transparent 12.5%, transparent 87%, #b8b9be 87.5%, #b8b9be), linear-gradient(30deg, #b8b9be 12%, transparent 12.5%, transparent 87%, #b8b9be 87.5%, #b8b9be), linear-gradient(150deg, #b8b9be 12%, transparent 12.5%, transparent 87%, #b8b9be 87.5%, #b8b9be), linear-gradient(60deg, #b8b9be77 25%, transparent 25.5%, transparent 75%, #b8b9be77 75%, #b8b9be77), linear-gradient(60deg, #b8b9be77 25%, transparent 25.5%, transparent 75%, #b8b9be77 75%, #b8b9be77);
+background-size: 24px 42px;
+background-position: 0 0, 0 0, 12px 21px, 12px 21px, 0 0, 12px 21px;}
+
+.logoimg{
+  size:30px
 }
